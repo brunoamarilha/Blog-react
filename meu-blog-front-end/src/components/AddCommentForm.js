@@ -3,7 +3,7 @@ import axios from "axios";
 
 const AddCommentForm = ({ articleName, onArticleUpdated}) => {
     const [name, setName ] = useState ('');
-    const [commentText, setCommentText] = useState ('');
+    const [commentText, setCommentText] = useState ([]);
 
     const addComment = async() => {
 const response = await axios.post(
